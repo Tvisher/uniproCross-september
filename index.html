@@ -3456,7 +3456,6 @@
         </dl>
       </div>
     </div>
-    <script src="./create.js"></script>
     <script>
       const questionsParent = document.querySelector("[data-scrolled-area]");
       const crossNumCells = document.querySelectorAll("[data-id]");
@@ -3476,7 +3475,7 @@
         "input.crossword-board__item"
       );
       invalidInputs.forEach((input) => {
-        input.value = input.getAttribute("pattern")[3];
+        // input.value = input.getAttribute("pattern")[3];
         input.addEventListener("input", (e) => {
           if (input.value.length > input.maxLength)
             input.value = input.value.slice(0, input.maxLength);
